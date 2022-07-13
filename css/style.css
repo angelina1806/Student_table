@@ -1,0 +1,76 @@
+.form-group {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.add-student,
+.filter-form {
+  display: inline-flex;
+  flex-direction: column;
+  width: 45%;
+  min-width: 400px;
+  max-width: 500px;
+}
+
+tr:first-child
+td {
+  cursor: pointer;
+}
+
+legend {
+  font-size: 20px;
+  font-weight: 600;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+label
+input {
+  width: 200px;
+}
+
+.my-submit,
+.reset-btn {
+  align-self: center;
+  margin-top: auto;
+  padding: 10px;
+  width: 200px;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.student-table {
+  width: 100%;
+  margin: 20px auto;
+}
+
+caption {
+  font-size: 20px;
+  font-weight: 600;
+}
+label {
+  position: relative;
+}
+
+.add-student-form.js-validate-error-field + .js-validate-error-label {
+  position: absolute;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  left: calc(100% - 200px);
+  top: 100%;
+  font-size: 10px;
+  max-width: 200px;
+}

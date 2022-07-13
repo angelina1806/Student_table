@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="just-validate.min.js"></script>
+  <script defer src="main.js"></script></head>
+<body>
+
+  <div class="form-group">
+    <form action="#"  class="add-student" method="get">
+        <label for="name">
+            Имя
+            <input class="add-student-form " type="text" id="name" name="name" required>
+        </label>
+
+        <label for="surname">
+            Фамилия
+            <input class="add-student-form" type="text" id="surname" required>
+        </label>
+
+        <label for="middlename">
+            Отчество
+            <input class="add-student-form" type="text" id="middlename" required>
+        </label>
+
+        <label for="birth">
+            Дата рождения
+            <input class="add-student-form input-date" type="date" id="birth" min="1900-01-01" required>
+        </label>
+
+        <label for="start-date">
+            Год начала обучения
+            <input class="add-student-form" type="number" min="2000" max="2022" id="start-date" required>
+        </label>
+
+        <label for="faculty">
+            Факультет
+            <input class="add-student-form" type="text" id="faculty" required>
+        </label>
+
+        <input class="my-submit" type="submit" value="Добавить студента" required>
+
+    </form>
+
+    <form action="#" class="filter-form">
+      <legend>Фильтр студентов</legend>
+
+      <label for="fullName">
+        ФИО
+        <input class="filter-input" type="text" id="fullName">
+      </label>
+
+      <label for="filter-faculty">
+        Факультет
+        <input class="filter-input" type="text" id="filter-faculty">
+      </label>
+
+      <label for="start-year">
+        Год начала обучение
+        <input class="filter-input" type="number" id="start-year" min="2000">
+      </label>
+
+      <label for="end-year">
+        Год окончания обучения
+        <input class="filter-input" type="number" id="end-year" min="2004">
+      </label>
+
+      <button class="reset-btn"> Сбросить фильтр</button>
+    </form></div>
+
+  <table class="student-table" border="2" cellspacing="0" cellpadding="8">
+    <caption>Список студентов</caption>
+    <tr>
+      <td class="td-title">ФИО</td>
+      <td class="td-title">Факультет</td>
+      <td class="td-title">Дата рождения / возраст</td>
+      <td class="td-title">Годы обучения</td>
+    </tr>
+  </table>
+</body>
+</html>
